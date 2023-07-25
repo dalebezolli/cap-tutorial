@@ -5,7 +5,14 @@
         <content>
             <List items="{/Books}">
                 <items>
-                    <StandardListItem title="{title}" description="{author}" />
+                    <CustomListItem>
+                        <FlexBox alignItems="Center">
+                            <Label text="Title" class="sapUiSmallMargin" />
+                            <Input value="{title}" class="sapUiSmallMarginEnd" />
+                            <Label text="Author" class="sapUiSmallMargin" />
+                            <Input value="{author}" class="sapUiSmallMarginEnd" />
+                        </FlexBox>
+                    </CustomListItem>
                 </items>
             </List>
         </content>
